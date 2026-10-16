@@ -40,6 +40,8 @@ def main():
     parser.add_argument("--warmups", type=int, default=1)
     parser.add_argument("--suites", choices=SUITES, nargs="+", default=list(SUITES))
     args = parser.parse_args()
+    if args.output.exists() and any(args.output.iterdir()):
+        parser.error("Choose an empty output directory")
     args.output.mkdir(parents=True, exist_ok=True)
     manifest = []
     returncodes = []
@@ -74,7 +76,7 @@ def main():
         ]
         if args.cpus:
             command += ["--cpus", str(args.cpus)]
-        command += ["--", "--pyargs", module, "-k", selection, "-q"]
+        command += ["--", str(origin), "-k", selection, "-q"]
         completed = subprocess.run(command)
         source["benchmark_exitcode"] = completed.returncode
         returncodes.append(completed.returncode)

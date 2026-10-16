@@ -1,5 +1,7 @@
 # pytest-threadbudget
 
+[![tests](https://github.com/AmoghAtreya/pytest-threadbudget/actions/workflows/tests.yml/badge.svg)](https://github.com/AmoghAtreya/pytest-threadbudget/actions/workflows/tests.yml)
+
 Opt-in BLAS/OpenMP thread ceilings for local pytest-xdist workers. Installing the
 plugin alone leaves tests unchanged. Python 3.11+, pytest 8–9, pytest-xdist 3.6+.
 
@@ -15,8 +17,8 @@ python -m pytest tests -q
 python -m pytest examples/test_matrix.py -n 2 --threadbudget=auto --threadbudget-report=work/example.json -q
 ```
 
-This project is not yet on PyPI. To use it in another environment, install the
-local checkout or built wheel. Follow [VALIDATE.md](VALIDATE.md) for complete
+The public source is available on [GitHub](https://github.com/AmoghAtreya/pytest-threadbudget).
+Until the first PyPI release is verified, install the local checkout or built wheel. Follow [VALIDATE.md](VALIDATE.md) for complete
 commands, real upstream test subsets and an optional macOS OpenBLAS profile.
 See [RESULTS.md](RESULTS.md) for measured results and their limits.
 
@@ -31,13 +33,15 @@ The plugin sets common native thread environment hints in each worker at
 `pytest_configure`, applies runtime caps to supported already-loaded pools, and
 rediscovers pools at each test boundary. Runtime caps never raise an existing
 tighter limit. JSON reports aggregate plans, observed pool settings, outcomes,
-and missing/crashed-worker diagnostics in the controller process.
+and missing/crashed-worker diagnostics in the controller process. Schema version 2
+retains minimum/maximum thread counts and violation counts across all recorded
+boundaries; the final snapshot cannot erase an earlier violation.
 
 The implementation builds on [threadpoolctl](https://github.com/joblib/threadpoolctl)
 and [joblib](https://joblib.readthedocs.io/en/stable/generated/joblib.cpu_count.html).
 The integration is motivated by
 [pytest-xdist issue #1012](https://github.com/pytest-dev/pytest-xdist/issues/1012).
-It is an independent prototype with no upstream endorsement or adoption claim.
+It is an independent alpha project with no upstream endorsement or adoption claim.
 
 ## Enable it in a project
 
@@ -119,8 +123,9 @@ be verified. Full details and return codes are in [VALIDATE.md](VALIDATE.md).
 - `scripts/validate_real_repos.py`: pinned-by-report upstream release selections.
 - `scripts/validate_statsmodels.py`: regression tests with early conftest loading.
 - `evidence/`: validation metadata, raw reports and logs from this machine.
-- `.github/workflows/tests.yml`: proposed Linux/macOS/Windows test matrix.
+- `.github/workflows/tests.yml`: built-wheel Linux/macOS/Windows test matrix.
 
-Build a wheel and source distribution with `python -m build`. Publishing,
-upstream PRs, and adoption are separate steps; this source has not been submitted
-to another project or uploaded to PyPI.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development checks,
+[CHANGELOG.md](CHANGELOG.md) for release notes, and [RELEASE.md](RELEASE.md) for
+the trusted-publishing procedure. Upstream PRs and adoption are tracked separately
+from package publication.

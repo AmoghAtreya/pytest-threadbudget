@@ -12,7 +12,7 @@ python -m pytest tests -q
 ```
 
 On Windows, activate with `.venv\Scripts\activate` instead. Python 3.11 or newer
-is required. The supplied GitHub Actions workflow covers a proposed OS/Python
+is required. The supplied GitHub Actions workflow covers an OS/Python
 matrix; only the local combinations documented in RESULTS.md were actually run.
 
 ## See a worker report
@@ -142,7 +142,7 @@ thread peaks. Short trials are noisy; no statistical significance is claimed.
 
 ```bash
 python -m build
-python -m pip install --force-reinstall --no-deps dist/pytest_threadbudget-0.1.0-py3-none-any.whl
+python -m pip install --force-reinstall --no-deps dist/pytest_threadbudget-0.1.1-py3-none-any.whl
 python -m pytest --trace-config --collect-only examples/test_matrix.py -q
 ```
 
