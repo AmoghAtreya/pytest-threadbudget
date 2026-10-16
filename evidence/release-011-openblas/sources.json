@@ -1,0 +1,38 @@
+[
+  {
+    "suite": "numpy-svd",
+    "distribution": "numpy",
+    "version": "1.26.4",
+    "repository": "https://github.com/numpy/numpy",
+    "module": "numpy.linalg.tests.test_linalg",
+    "selection": "TestSVD",
+    "test_file": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/lib/python3.11/site-packages/numpy/linalg/tests/test_linalg.py",
+    "test_file_sha256": "ae0be62ba3abef4bbc98dd38a6e7ad2f71604b167c7c9ace948e69b538025399",
+    "scope": "Selected tests distributed with an installed upstream release; original assertions and conftest hooks retained.",
+    "benchmark_exitcode": 0
+  },
+  {
+    "suite": "scipy-svd",
+    "distribution": "scipy",
+    "version": "1.12.0",
+    "repository": "https://github.com/scipy/scipy",
+    "module": "scipy.linalg.tests.test_decomp",
+    "selection": "TestSVD_GESDD",
+    "test_file": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/lib/python3.11/site-packages/scipy/linalg/tests/test_decomp.py",
+    "test_file_sha256": "699621b1f375b8a88ad7d0209e226e37fcf6008f4617118ec53ad5f75bb1a2ee",
+    "scope": "Selected tests distributed with an installed upstream release; original assertions and conftest hooks retained.",
+    "benchmark_exitcode": 0
+  },
+  {
+    "suite": "sklearn-kmeans",
+    "distribution": "scikit-learn",
+    "version": "1.4.2",
+    "repository": "https://github.com/scikit-learn/scikit-learn",
+    "module": "sklearn.cluster.tests.test_k_means",
+    "selection": "k_means_1_iteration or k_means_function",
+    "test_file": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/lib/python3.11/site-packages/sklearn/cluster/tests/test_k_means.py",
+    "test_file_sha256": "08bb3c6d86db398df60345e9cb79307a3817c1c3641cef4fd622799d48886180",
+    "scope": "Selected tests distributed with an installed upstream release; original assertions and conftest hooks retained.",
+    "benchmark_exitcode": 0
+  }
+]

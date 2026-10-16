@@ -1,0 +1,60 @@
+{
+  "distribution": "statsmodels",
+  "version": "0.15.0",
+  "repository": "https://github.com/statsmodels/statsmodels",
+  "test_file": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/statsmodels/regression/tests/test_regression.py",
+  "test_file_sha256": "c4f7b3b532187b8eec4ccae826b7c72e4a41859fc018a0d6cebd2ac8b7f9598b",
+  "scope": "Installed regression tests; absolute path loads original conftest early",
+  "original_native_thread_environment": {},
+  "default-comparison": {
+    "command": [
+      "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/bin/python",
+      "-m",
+      "pytest_threadbudget.benchmark",
+      "--output",
+      "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/work/release-011-statsmodels/default-comparison",
+      "--workers",
+      "4",
+      "--repeats",
+      "5",
+      "--warmups",
+      "1",
+      "--timeout",
+      "600",
+      "--",
+      "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/statsmodels/regression/tests/test_regression.py",
+      "--randomly-seed=42",
+      "--randomly-dont-reset-seed",
+      "-m",
+      "not slow and not high_memory",
+      "-q"
+    ],
+    "exitcode": 0
+  },
+  "manual-cap-comparison": {
+    "command": [
+      "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/bin/python",
+      "-m",
+      "pytest_threadbudget.benchmark",
+      "--output",
+      "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/work/release-011-statsmodels/manual-cap-comparison",
+      "--workers",
+      "4",
+      "--repeats",
+      "5",
+      "--warmups",
+      "1",
+      "--timeout",
+      "600",
+      "--override-env",
+      "--",
+      "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/statsmodels/regression/tests/test_regression.py",
+      "--randomly-seed=42",
+      "--randomly-dont-reset-seed",
+      "-m",
+      "not slow and not high_memory",
+      "-q"
+    ],
+    "exitcode": 0
+  }
+}

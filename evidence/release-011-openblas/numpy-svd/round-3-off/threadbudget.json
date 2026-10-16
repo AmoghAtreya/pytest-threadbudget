@@ -1,0 +1,113 @@
+{
+  "schema_version": 2,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.17",
+  "requested_mode": "off",
+  "exitstatus": 0,
+  "workers": [
+    {
+      "worker": "gw0",
+      "pid": 33693,
+      "plan": {
+        "mode": "off",
+        "detected_cpus": 18,
+        "effective_cpus": 18,
+        "workers": 2,
+        "threads_per_worker": null,
+        "active": false,
+        "reason": "disabled",
+        "explicit_environment": {},
+        "allocation_exceeds_budget": false
+      },
+      "active_in_this_process": false,
+      "outcomes": {
+        "passed": 13,
+        "failed": 0,
+        "skipped": 0,
+        "setup_errors": 0,
+        "teardown_errors": 0
+      },
+      "pools": [
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 18,
+          "prefix": "libopenblas",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "version": "0.3.23.dev",
+          "threading_layer": "pthreads",
+          "architecture": "armv8",
+          "observed_at": "session_finish"
+        }
+      ],
+      "notes": [],
+      "pool_observations": [
+        {
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "samples": 27,
+          "min_num_threads": 18,
+          "max_num_threads": 18,
+          "ceiling_violations": 0,
+          "unknown_thread_counts": 0
+        }
+      ],
+      "elapsed_seconds": 0.3908119590487331,
+      "exitstatus": 0
+    },
+    {
+      "worker": "gw1",
+      "pid": 33694,
+      "plan": {
+        "mode": "off",
+        "detected_cpus": 18,
+        "effective_cpus": 18,
+        "workers": 2,
+        "threads_per_worker": null,
+        "active": false,
+        "reason": "disabled",
+        "explicit_environment": {},
+        "allocation_exceeds_budget": false
+      },
+      "active_in_this_process": false,
+      "outcomes": {
+        "passed": 4,
+        "failed": 0,
+        "skipped": 0,
+        "setup_errors": 0,
+        "teardown_errors": 0
+      },
+      "pools": [
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 18,
+          "prefix": "libopenblas",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "version": "0.3.23.dev",
+          "threading_layer": "pthreads",
+          "architecture": "armv8",
+          "observed_at": "session_finish"
+        }
+      ],
+      "notes": [],
+      "pool_observations": [
+        {
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "samples": 9,
+          "min_num_threads": 18,
+          "max_num_threads": 18,
+          "ceiling_violations": 0,
+          "unknown_thread_counts": 0
+        }
+      ],
+      "elapsed_seconds": 0.47634216700680554,
+      "exitstatus": 0
+    }
+  ],
+  "worker_errors": [],
+  "scope": "local process BLAS/OpenMP pools; pool observations are not OS thread peaks"
+}

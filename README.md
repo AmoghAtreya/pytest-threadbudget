@@ -7,7 +7,14 @@ plugin alone leaves tests unchanged. Python 3.11+, pytest 8–9, pytest-xdist 3.
 
 ## Quick start
 
-From this source directory:
+Install and enable it in your test environment:
+
+```bash
+python -m pip install pytest-threadbudget pytest-xdist
+python -m pytest -n 4 --threadbudget=auto
+```
+
+To develop and test from this source directory:
 
 ```bash
 python3.11 -m venv .venv
@@ -18,9 +25,9 @@ python -m pytest examples/test_matrix.py -n 2 --threadbudget=auto --threadbudget
 ```
 
 The public source is available on [GitHub](https://github.com/AmoghAtreya/pytest-threadbudget).
-Until the first PyPI release is verified, install the local checkout or built wheel. Follow [VALIDATE.md](VALIDATE.md) for complete
+You can also install the local checkout or built wheel. Follow [VALIDATE.md](https://github.com/AmoghAtreya/pytest-threadbudget/blob/main/VALIDATE.md) for complete
 commands, real upstream test subsets and an optional macOS OpenBLAS profile.
-See [RESULTS.md](RESULTS.md) for measured results and their limits.
+See [RESULTS.md](https://github.com/AmoghAtreya/pytest-threadbudget/blob/main/RESULTS.md) for measured results and their limits.
 
 ## What it does
 
@@ -112,7 +119,7 @@ installed NumPy/SciPy/scikit-learn releases. It does not run complete repositori
 or imply adoption. Benchmarks alternate execution order, preserve raw logs,
 compare individual JUnit outcomes and keep slowdowns visible. Headline timing
 comparisons are suppressed if test outcomes differ or runtime enforcement cannot
-be verified. Full details and return codes are in [VALIDATE.md](VALIDATE.md).
+be verified. Full details and return codes are in [VALIDATE.md](https://github.com/AmoghAtreya/pytest-threadbudget/blob/main/VALIDATE.md).
 
 ## Layout and development
 
@@ -125,7 +132,7 @@ be verified. Full details and return codes are in [VALIDATE.md](VALIDATE.md).
 - `evidence/`: validation metadata, raw reports and logs from this machine.
 - `.github/workflows/tests.yml`: built-wheel Linux/macOS/Windows test matrix.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development checks,
-[CHANGELOG.md](CHANGELOG.md) for release notes, and [RELEASE.md](RELEASE.md) for
+See [CONTRIBUTING.md](https://github.com/AmoghAtreya/pytest-threadbudget/blob/main/CONTRIBUTING.md) for development checks,
+[CHANGELOG.md](https://github.com/AmoghAtreya/pytest-threadbudget/blob/main/CHANGELOG.md) for release notes, and [RELEASE.md](https://github.com/AmoghAtreya/pytest-threadbudget/blob/main/RELEASE.md) for
 the trusted-publishing procedure. Upstream PRs and adoption are tracked separately
 from package publication.

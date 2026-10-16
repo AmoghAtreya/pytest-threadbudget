@@ -1,0 +1,9 @@
+bringing up nodes...
+bringing up nodes...
+
+.................                                                        [100%]
+- generated xml file: /Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/work/release-011-openblas/numpy-svd/round-3-auto/junit.xml -
+================================= threadbudget =================================
+gw0: enabled; 1 native pools observed; 9 threads/worker, 18 CPUs/2 workers
+gw1: enabled; 1 native pools observed; 9 threads/worker, 18 CPUs/2 workers
+17 passed in 1.12s

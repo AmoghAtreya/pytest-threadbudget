@@ -19,6 +19,8 @@ def run_pytest(tmp_path, source, *arguments, environment=None, conftest=None):
     env.pop("PYTEST_ADDOPTS", None)
     env["PYTEST_DISABLE_PLUGIN_AUTOLOAD"] = "1"
     env.update(environment or {})
+    # With -c /dev/null, pytest 8.0 needs an explicit conftest boundary to
+    # avoid traversing unrelated, potentially protected filesystem ancestors.
     command = [
         sys.executable,
         "-m",
@@ -29,6 +31,8 @@ def run_pytest(tmp_path, source, *arguments, environment=None, conftest=None):
         "xdist.plugin",
         "-c",
         os.devnull,
+        "--confcutdir",
+        str(tmp_path),
         "--rootdir",
         str(tmp_path),
         str(tmp_path / "test_case.py"),
@@ -36,7 +40,9 @@ def run_pytest(tmp_path, source, *arguments, environment=None, conftest=None):
         "-q",
         *arguments,
     ]
-    result = subprocess.run(command, env=env, capture_output=True, text=True, timeout=60)
+    result = subprocess.run(
+        command, cwd=tmp_path, env=env, capture_output=True, text=True, timeout=60
+    )
     result.diagnostic = result.stdout + result.stderr
     report = tmp_path / "report.json"
     return result, json.loads(report.read_text()) if report.exists() else None
@@ -128,17 +134,22 @@ from threadpoolctl import threadpool_info
 from pytest_threadbudget.budget import THREAD_ENV
 for key in THREAD_ENV: os.environ.pop(key, None)
 before = {p["filepath"]:p["num_threads"] for p in threadpool_info()}
-result = pytest.main(["-p", "threadbudget", "-c", os.devnull, "--rootdir", %r, %r, "--threadbudget=1", "-q"])
+result = pytest.main(["-p", "threadbudget", "-c", os.devnull, "--confcutdir", %r, "--rootdir", %r, %r, "--threadbudget=1", "-q"])
 assert result == 0
 assert all(key not in os.environ for key in THREAD_ENV)
 after = {p["filepath"]:p["num_threads"] for p in threadpool_info()}
 assert before == after, (before,after)
-""" % (str(tmp_path), str(tmp_path / "test_case.py"))
+""" % (str(tmp_path), str(tmp_path), str(tmp_path / "test_case.py"))
     (tmp_path / "test_case.py").write_text("def test_pass(): pass\n")
     env = {**os.environ, "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1"}
     env.pop("PYTEST_ADDOPTS", None)
     result = subprocess.run(
-        [sys.executable, "-c", script], env=env, capture_output=True, text=True, timeout=60
+        [sys.executable, "-c", script],
+        cwd=tmp_path,
+        env=env,
+        capture_output=True,
+        text=True,
+        timeout=60,
     )
     assert result.returncode == 0, result.stdout + result.stderr
 
@@ -212,6 +223,8 @@ raise SystemExit(pytest.main(%r))
         "threadbudget",
         "-c",
         os.devnull,
+        "--confcutdir",
+        str(tmp_path),
         "--rootdir",
         str(tmp_path),
         str(test_file),
@@ -223,7 +236,12 @@ raise SystemExit(pytest.main(%r))
     for key in (*THREAD_ENV, "PYTEST_ADDOPTS"):
         env.pop(key, None)
     result = subprocess.run(
-        [sys.executable, "-c", code], env=env, capture_output=True, text=True, timeout=60
+        [sys.executable, "-c", code],
+        cwd=tmp_path,
+        env=env,
+        capture_output=True,
+        text=True,
+        timeout=60,
     )
     assert result.returncode == 0, result.stdout + result.stderr
     report = json.loads(report_file.read_text())

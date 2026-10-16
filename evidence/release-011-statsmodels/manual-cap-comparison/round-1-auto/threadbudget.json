@@ -1,0 +1,307 @@
+{
+  "schema_version": 2,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.17",
+  "requested_mode": "auto",
+  "exitstatus": 0,
+  "workers": [
+    {
+      "worker": "gw0",
+      "pid": 33288,
+      "plan": {
+        "mode": "auto",
+        "detected_cpus": 18,
+        "effective_cpus": 18,
+        "workers": 4,
+        "threads_per_worker": 4,
+        "active": true,
+        "reason": "enabled",
+        "explicit_environment": {
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "allocation_exceeds_budget": false
+      },
+      "active_in_this_process": true,
+      "outcomes": {
+        "passed": 85,
+        "failed": 0,
+        "skipped": 0,
+        "setup_errors": 0,
+        "teardown_errors": 0
+      },
+      "pools": [
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libopenblas",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "version": "0.3.23.dev",
+          "threading_layer": "pthreads",
+          "architecture": "armv8",
+          "observed_at": "session_finish"
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libopenblas",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/scipy/.dylibs/libopenblas.0.dylib",
+          "version": "0.3.21.dev",
+          "threading_layer": "pthreads",
+          "architecture": "armv8",
+          "observed_at": "session_finish"
+        }
+      ],
+      "notes": [],
+      "pool_observations": [
+        {
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "samples": 171,
+          "min_num_threads": 1,
+          "max_num_threads": 1,
+          "ceiling_violations": 0,
+          "unknown_thread_counts": 0
+        },
+        {
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/scipy/.dylibs/libopenblas.0.dylib",
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "samples": 171,
+          "min_num_threads": 1,
+          "max_num_threads": 1,
+          "ceiling_violations": 0,
+          "unknown_thread_counts": 0
+        }
+      ],
+      "elapsed_seconds": 1.2251699999906123,
+      "exitstatus": 0
+    },
+    {
+      "worker": "gw1",
+      "pid": 33289,
+      "plan": {
+        "mode": "auto",
+        "detected_cpus": 18,
+        "effective_cpus": 18,
+        "workers": 4,
+        "threads_per_worker": 4,
+        "active": true,
+        "reason": "enabled",
+        "explicit_environment": {
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "allocation_exceeds_budget": false
+      },
+      "active_in_this_process": true,
+      "outcomes": {
+        "passed": 100,
+        "failed": 0,
+        "skipped": 0,
+        "setup_errors": 0,
+        "teardown_errors": 0
+      },
+      "pools": [
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libopenblas",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "version": "0.3.23.dev",
+          "threading_layer": "pthreads",
+          "architecture": "armv8",
+          "observed_at": "session_finish"
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libopenblas",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/scipy/.dylibs/libopenblas.0.dylib",
+          "version": "0.3.21.dev",
+          "threading_layer": "pthreads",
+          "architecture": "armv8",
+          "observed_at": "session_finish"
+        }
+      ],
+      "notes": [],
+      "pool_observations": [
+        {
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "samples": 201,
+          "min_num_threads": 1,
+          "max_num_threads": 1,
+          "ceiling_violations": 0,
+          "unknown_thread_counts": 0
+        },
+        {
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/scipy/.dylibs/libopenblas.0.dylib",
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "samples": 201,
+          "min_num_threads": 1,
+          "max_num_threads": 1,
+          "ceiling_violations": 0,
+          "unknown_thread_counts": 0
+        }
+      ],
+      "elapsed_seconds": 1.1562776248902082,
+      "exitstatus": 0
+    },
+    {
+      "worker": "gw2",
+      "pid": 33290,
+      "plan": {
+        "mode": "auto",
+        "detected_cpus": 18,
+        "effective_cpus": 18,
+        "workers": 4,
+        "threads_per_worker": 4,
+        "active": true,
+        "reason": "enabled",
+        "explicit_environment": {
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "allocation_exceeds_budget": false
+      },
+      "active_in_this_process": true,
+      "outcomes": {
+        "passed": 118,
+        "failed": 0,
+        "skipped": 1,
+        "setup_errors": 0,
+        "teardown_errors": 0
+      },
+      "pools": [
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libopenblas",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "version": "0.3.23.dev",
+          "threading_layer": "pthreads",
+          "architecture": "armv8",
+          "observed_at": "session_finish"
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libopenblas",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/scipy/.dylibs/libopenblas.0.dylib",
+          "version": "0.3.21.dev",
+          "threading_layer": "pthreads",
+          "architecture": "armv8",
+          "observed_at": "session_finish"
+        }
+      ],
+      "notes": [],
+      "pool_observations": [
+        {
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "samples": 239,
+          "min_num_threads": 1,
+          "max_num_threads": 1,
+          "ceiling_violations": 0,
+          "unknown_thread_counts": 0
+        },
+        {
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/scipy/.dylibs/libopenblas.0.dylib",
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "samples": 239,
+          "min_num_threads": 1,
+          "max_num_threads": 1,
+          "ceiling_violations": 0,
+          "unknown_thread_counts": 0
+        }
+      ],
+      "elapsed_seconds": 1.033176084049046,
+      "exitstatus": 0
+    },
+    {
+      "worker": "gw3",
+      "pid": 33291,
+      "plan": {
+        "mode": "auto",
+        "detected_cpus": 18,
+        "effective_cpus": 18,
+        "workers": 4,
+        "threads_per_worker": 4,
+        "active": true,
+        "reason": "enabled",
+        "explicit_environment": {
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "allocation_exceeds_budget": false
+      },
+      "active_in_this_process": true,
+      "outcomes": {
+        "passed": 72,
+        "failed": 0,
+        "skipped": 1,
+        "setup_errors": 0,
+        "teardown_errors": 0
+      },
+      "pools": [
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libopenblas",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "version": "0.3.23.dev",
+          "threading_layer": "pthreads",
+          "architecture": "armv8",
+          "observed_at": "session_finish"
+        },
+        {
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "prefix": "libopenblas",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/scipy/.dylibs/libopenblas.0.dylib",
+          "version": "0.3.21.dev",
+          "threading_layer": "pthreads",
+          "architecture": "armv8",
+          "observed_at": "session_finish"
+        }
+      ],
+      "notes": [],
+      "pool_observations": [
+        {
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "samples": 147,
+          "min_num_threads": 1,
+          "max_num_threads": 1,
+          "ceiling_violations": 0,
+          "unknown_thread_counts": 0
+        },
+        {
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/scipy/.dylibs/libopenblas.0.dylib",
+          "user_api": "blas",
+          "internal_api": "openblas",
+          "samples": 147,
+          "min_num_threads": 1,
+          "max_num_threads": 1,
+          "ceiling_violations": 0,
+          "unknown_thread_counts": 0
+        }
+      ],
+      "elapsed_seconds": 0.9975250409916043,
+      "exitstatus": 0
+    }
+  ],
+  "worker_errors": [],
+  "scope": "local process BLAS/OpenMP pools; pool observations are not OS thread peaks"
+}

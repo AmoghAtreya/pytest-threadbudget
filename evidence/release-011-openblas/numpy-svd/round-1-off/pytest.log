@@ -1,0 +1,9 @@
+bringing up nodes...
+bringing up nodes...
+
+.................                                                        [100%]
+- generated xml file: /Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/work/release-011-openblas/numpy-svd/round-1-off/junit.xml -
+================================= threadbudget =================================
+gw0: disabled; 1 native pools observed
+gw1: disabled; 1 native pools observed
+17 passed in 1.04s

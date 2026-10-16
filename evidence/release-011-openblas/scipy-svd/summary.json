@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "cwd": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget",
+    "python": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "versions": {
+      "pytest-threadbudget": "0.1.1",
+      "pytest": "8.4.2",
+      "pytest-xdist": "3.8.0",
+      "threadpoolctl": "3.7.0",
+      "joblib": "1.6.0",
+      "numpy": "1.26.4",
+      "scipy": "1.12.0",
+      "scikit-learn": "1.4.2",
+      "pandas": "3.0.6",
+      "psutil": "7.2.2"
+    },
+    "native_thread_environment": {},
+    "workers": 2,
+    "cpu_cap": null,
+    "override_env": false,
+    "pytest_args": [
+      "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/lib/python3.11/site-packages/scipy/linalg/tests/test_decomp.py",
+      "-k",
+      "TestSVD_GESDD",
+      "-q"
+    ],
+    "measurement_notes": [
+      "Wall time includes pytest startup, collection and worker startup.",
+      "Thread peak and CPU time are sampled estimates, not exact accounting.",
+      "No cold-cache claim or statistical significance claim is made."
+    ]
+  },
+  "summary": {
+    "off": {
+      "runs": 3,
+      "wall_seconds": {
+        "median": 1.627179958857596,
+        "min": 1.5787015829700977,
+        "max": 1.6412766249850392,
+        "available_samples": 3
+      },
+      "sampled_peak_process_tree_threads": {
+        "median": null,
+        "min": null,
+        "max": null,
+        "available_samples": 0
+      },
+      "sampled_cpu_seconds": {
+        "median": null,
+        "min": null,
+        "max": null,
+        "available_samples": 0
+      }
+    },
+    "auto": {
+      "runs": 3,
+      "wall_seconds": {
+        "median": 1.5460760828573257,
+        "min": 1.4386052498593926,
+        "max": 1.5573285419959575,
+        "available_samples": 3
+      },
+      "sampled_peak_process_tree_threads": {
+        "median": null,
+        "min": null,
+        "max": null,
+        "available_samples": 0
+      },
+      "sampled_cpu_seconds": {
+        "median": null,
+        "min": null,
+        "max": null,
+        "available_samples": 0
+      }
+    },
+    "all_runs_passed_with_identical_outcomes": true,
+    "invalid_reasons": [],
+    "runtime_enforcement_verified": true,
+    "median_wall_reduction_percent": 4.984321221434619
+  }
+}

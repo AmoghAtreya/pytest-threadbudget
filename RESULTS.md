@@ -1,8 +1,8 @@
 # Validation results
 
 Local validation on 2026-10-15: macOS 26.6.2, Apple Silicon arm64, Python 3.11.17,
-18 detected logical CPUs. This is a working prototype with released upstream
-test-subset validation. It has no known adopters, upstream merge or PyPI release.
+18 detected logical CPUs. Historical and release validation profiles are separated
+below. No established repository adoption or upstream merge is claimed.
 
 ## Plugin tests
 
@@ -15,8 +15,8 @@ Tests include real independent pytest processes and local xdist workers,
 environment preservation/override, early and late native imports, in-process
 restoration, intentional test failure, worker crash, report-write errors, remote
 host rejection, benchmark timeouts, unavailable OS sampling and outcome comparison.
-The proposed CI matrix has not been run on Linux or Windows. No local multi-OS
-or multi-Python-version result is claimed.
+These initial results predated the public CI matrix. The 0.1.1 release checks
+below describe the later built-wheel compatibility validation.
 
 ## Upstream release subsets
 
@@ -122,10 +122,10 @@ diagnostics recorded. No OS-thread reduction, CPU-seconds saving, or memory-savi
 claim is supported. `num_threads` in a native pool report is a configured runtime
 setting, not a measurement of peak live threads or CPU utilization.
 
-## What to do next
+## Interpreting benchmark results
 
-Run the included workflow on Linux with OpenBLAS/MKL, use longer CPU-heavy tests,
-and compare against the repository's existing thread policy. Preserve failures,
+For an adoption decision, use longer CPU-heavy tests and compare against the
+repository's existing thread policy. Preserve failures,
 neutral results and regressions. Only claim upstream CI savings after measuring
 an actual CI job. Discuss any proposed integration with maintainers before
 claiming adoption or submitting a replacement for their current limiting code.
@@ -137,3 +137,35 @@ Relevant primary references:
 - https://github.com/joblib/threadpoolctl
 - https://joblib.readthedocs.io/en/stable/generated/joblib.cpu_count.html
 - https://docs.pytest.org/en/stable/how-to/writing_plugins.html
+
+## 0.1.1 release validation
+
+Reports produced by 0.1.1 retain all boundary observations rather than only the
+final pool snapshot. Historical 0.1.0 reports above retain their original schema
+and are not evidence of passing the stricter 0.1.1 verification.
+
+A fresh Statsmodels 0.15.0 regression comparison used four workers, one warmup
+and **five measured runs per mode**. All 24 trials across the two comparisons
+had **375 passes and 2 skips**, with identical per-test outcomes. Every enabled
+trial passed the stricter runtime checks. Raw reports are under
+`evidence/release-011-statsmodels`.
+
+- Unrestricted threading: baseline median **8.012s** (7.598–8.566s), plugin
+  **3.440s** (3.167–3.671s), approximately **57.1% less wall time**.
+- Manual `OPENBLAS_NUM_THREADS=1`: baseline median **2.308s** (2.228–2.418s),
+  plugin with explicit override **2.307s** (2.278–2.484s). The approximately
+  **0.03%** difference is effectively neutral at this measurement resolution.
+
+These remain short local installed-release subsets, not full CI benchmarks.
+They do not support a speed advantage over manual capping. OS resource sampling
+remained unavailable. Source hashes in `evidence/source-hashes.json` describe
+the 0.1.1 validation code; earlier snapshots are retained separately.
+
+A fresh 0.1.1 OpenBLAS comparison also reran NumPy 1.26.4 (17 passes),
+SciPy 1.12.0 (11 passes, 1 skip), and scikit-learn 1.4.2 (7 passes), using
+two workers, one warmup and three measured runs per mode. All eight trials per
+suite had identical outcomes and passed stricter enforcement verification.
+NumPy's median was 4.0% slower, SciPy's 5.0% faster, and scikit-learn's 0.5% faster.
+These short differences are not evidence of a general speedup. Raw trials are
+in `evidence/release-011-openblas`. The local OpenBLAS plugin suite passed
+**54 tests with 2 platform/opt-in skips**.
