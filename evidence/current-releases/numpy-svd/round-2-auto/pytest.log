@@ -1,0 +1,9 @@
+bringing up nodes...
+bringing up nodes...
+
+...................                                                      [100%]
+================================= threadbudget =================================
+gw0: enabled; 0 native pools observed; 9 threads/worker, 18 CPUs/2 workers
+gw1: enabled; 0 native pools observed; 9 threads/worker, 18 CPUs/2 workers
+No supported native pools observed; environment hints alone do not verify runtime enforcement.
+19 passed in 0.67s

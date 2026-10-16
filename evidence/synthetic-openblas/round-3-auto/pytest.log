@@ -1,0 +1,11 @@
+bringing up nodes...
+bringing up nodes...
+
+.........                                                                [100%]
+- generated xml file: /Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-3-auto/junit.xml -
+================================= threadbudget =================================
+gw0: enabled; 1 native pools observed; 4 threads/worker, 18 CPUs/4 workers
+gw1: enabled; 1 native pools observed; 4 threads/worker, 18 CPUs/4 workers
+gw2: enabled; 1 native pools observed; 4 threads/worker, 18 CPUs/4 workers
+gw3: enabled; 1 native pools observed; 4 threads/worker, 18 CPUs/4 workers
+9 passed in 1.40s

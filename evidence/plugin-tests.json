@@ -1,0 +1,19 @@
+{
+  "platform": "macOS 26.6.2 arm64",
+  "python": "3.11.17",
+  "runs": [
+    {
+      "pytest": "9.1.1",
+      "numpy": "2.4.6",
+      "passed": 46,
+      "skipped": 2,
+      "reason": "Unsupported Apple Accelerate pool introspection"
+    },
+    {
+      "pytest": "8.4.2",
+      "numpy": "1.26.4",
+      "passed": 48,
+      "skipped": 0
+    }
+  ]
+}

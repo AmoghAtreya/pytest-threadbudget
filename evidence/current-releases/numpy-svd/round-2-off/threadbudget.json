@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.17",
+  "requested_mode": "off",
+  "exitstatus": 0,
+  "workers": [
+    {
+      "worker": "gw0",
+      "pid": 24494,
+      "plan": {
+        "mode": "off",
+        "detected_cpus": 18,
+        "effective_cpus": 18,
+        "workers": 2,
+        "threads_per_worker": null,
+        "active": false,
+        "reason": "disabled",
+        "explicit_environment": {},
+        "allocation_exceeds_budget": false
+      },
+      "active_in_this_process": false,
+      "outcomes": {
+        "passed": 4,
+        "failed": 0,
+        "skipped": 0,
+        "setup_errors": 0,
+        "teardown_errors": 0
+      },
+      "pools": [],
+      "notes": [],
+      "elapsed_seconds": 0.4368446250446141,
+      "exitstatus": 0
+    },
+    {
+      "worker": "gw1",
+      "pid": 24495,
+      "plan": {
+        "mode": "off",
+        "detected_cpus": 18,
+        "effective_cpus": 18,
+        "workers": 2,
+        "threads_per_worker": null,
+        "active": false,
+        "reason": "disabled",
+        "explicit_environment": {},
+        "allocation_exceeds_budget": false
+      },
+      "active_in_this_process": false,
+      "outcomes": {
+        "passed": 15,
+        "failed": 0,
+        "skipped": 0,
+        "setup_errors": 0,
+        "teardown_errors": 0
+      },
+      "pools": [],
+      "notes": [],
+      "elapsed_seconds": 0.30083441617898643,
+      "exitstatus": 0
+    }
+  ],
+  "worker_errors": [],
+  "scope": "local process BLAS/OpenMP pools; pool observations are not OS thread peaks"
+}

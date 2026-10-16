@@ -1,0 +1,9 @@
+{
+  "distribution": "statsmodels",
+  "version": "0.15.0",
+  "repository": "https://github.com/statsmodels/statsmodels",
+  "test_file": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/statsmodels/regression/tests/test_regression.py",
+  "test_file_sha256": "c4f7b3b532187b8eec4ccae826b7c72e4a41859fc018a0d6cebd2ac8b7f9598b",
+  "invocation": "absolute test-file path, four local workers, fixed random seed42",
+  "scope": "Selected release regression test module; not full-repository CI"
+}

@@ -1,0 +1,23 @@
+bringing up nodes...
+bringing up nodes...
+
+........................................................................ [ 19%]
+........................................................................ [ 38%]
+.............................s.......................................... [ 57%]
+........................................................................ [ 76%]
+.....s.................................................................. [ 95%]
+.................                                                        [100%]
+=============================== warnings summary ===============================
+regression/tests/test_regression.py::test_summary_after_remove_data[GLS]
+regression/tests/test_regression.py::test_summary_after_remove_data[OLS]
+  /Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/.venv-statsmodels/lib/python3.11/site-packages/scipy/stats/_stats_py.py:1971: UserWarning: kurtosistest only valid for n>=20 ... continuing anyway, n=16
+    k, _ = kurtosistest(a, axis)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/outputs/pytest-threadbudget/work/statsmodels-validation/results/configuration-fix-01/default-corrected/round-4-off/junit.xml -
+================================= threadbudget =================================
+gw0: disabled; 2 native pools observed
+gw1: disabled; 2 native pools observed
+gw2: disabled; 2 native pools observed
+gw3: disabled; 2 native pools observed
+375 passed, 2 skipped, 2 warnings in 7.63s

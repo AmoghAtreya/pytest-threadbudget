@@ -1,0 +1,38 @@
+[
+  {
+    "suite": "numpy-svd",
+    "distribution": "numpy",
+    "version": "2.4.6",
+    "repository": "https://github.com/numpy/numpy",
+    "module": "numpy.linalg.tests.test_linalg",
+    "selection": "TestSVD",
+    "test_file": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-env/lib/python3.11/site-packages/numpy/linalg/tests/test_linalg.py",
+    "test_file_sha256": "a28dc3a25a9dc2bb637aa1cd2c4c0e0c069259d49eeb106a662fc932e6b90616",
+    "scope": "Selected tests distributed with an installed upstream release; original assertions and conftest hooks retained.",
+    "benchmark_exitcode": 2
+  },
+  {
+    "suite": "scipy-svd",
+    "distribution": "scipy",
+    "version": "1.17.1",
+    "repository": "https://github.com/scipy/scipy",
+    "module": "scipy.linalg.tests.test_decomp",
+    "selection": "TestSVD_GESDD",
+    "test_file": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-env/lib/python3.11/site-packages/scipy/linalg/tests/test_decomp.py",
+    "test_file_sha256": "e5d0b875a57ab22609f85f230141063bc28dd006809e5650a4afeb3b6ae5fabc",
+    "scope": "Selected tests distributed with an installed upstream release; original assertions and conftest hooks retained.",
+    "benchmark_exitcode": 2
+  },
+  {
+    "suite": "sklearn-kmeans",
+    "distribution": "scikit-learn",
+    "version": "1.9.1",
+    "repository": "https://github.com/scikit-learn/scikit-learn",
+    "module": "sklearn.cluster.tests.test_k_means",
+    "selection": "k_means_1_iteration or k_means_function",
+    "test_file": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-env/lib/python3.11/site-packages/sklearn/cluster/tests/test_k_means.py",
+    "test_file_sha256": "33bef129b0cb1cd9691b72d970df3e7b56b70d67e8cf4d31ee9b1037a07eae3a",
+    "scope": "Selected tests distributed with an installed upstream release; original assertions and conftest hooks retained.",
+    "benchmark_exitcode": 0
+  }
+]

@@ -1,0 +1,8 @@
+include LICENSE README.md VALIDATE.md RESULTS.md CHANGELOG.md CONTRIBUTING.md RELEASE.md requirements-macos-openblas.txt
+recursive-include examples *.py
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include evidence *.json *.xml *.log *.txt
+recursive-include .github/workflows *.yml
+global-exclude *.pyc
+global-exclude __pycache__

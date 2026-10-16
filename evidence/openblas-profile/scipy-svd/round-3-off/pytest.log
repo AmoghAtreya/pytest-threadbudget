@@ -1,0 +1,15 @@
+bringing up nodes...
+bringing up nodes...
+
+..........s.                                                             [100%]
+=============================== warnings summary ===============================
+work/threadbudget-openblas-env/lib/python3.11/site-packages/scipy/conftest.py:9
+work/threadbudget-openblas-env/lib/python3.11/site-packages/scipy/conftest.py:9
+  /Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/lib/python3.11/site-packages/scipy/conftest.py:9: UserWarning: The numpy.array_api submodule is still experimental. See NEP 47.
+    import numpy.array_api
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================= threadbudget =================================
+gw0: disabled; 2 native pools observed
+gw1: disabled; 2 native pools observed
+11 passed, 1 skipped, 2 warnings in 1.00s

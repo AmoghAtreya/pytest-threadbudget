@@ -1,0 +1,12 @@
+{
+  "scripts/validate_real_repos.py": "a2298a0a150efedb584f8c1e467cb73b13f4759a0f14809ecb4abbcd12e3dcff",
+  "scripts/validate_statsmodels.py": "645079d2663af68a647c3a325120a6fa32c68c0301267682685745816a20cebe",
+  "src/pytest_threadbudget/__init__.py": "7f7c59ca3c545c444633b9a0df41a832d4f54a9a197ec93924f3a021f76ac2bb",
+  "src/pytest_threadbudget/benchmark.py": "abbaf6ecf1a70a2d16a1dacbf39156993b7c94e923365ed0c1bee57df46567fc",
+  "src/pytest_threadbudget/budget.py": "4dd193ca3556ce0b6b6ffb50f877fb701bbdf5ce2eebc6864e6da0724e26e17c",
+  "src/pytest_threadbudget/plugin.py": "e742fdaae4bd096d9e6e5d7af441fb771fdfd862766b33d3785b57b3c31d981c",
+  "tests/test_benchmark.py": "a3eff27e087e6328032e6544296018fad21738391b4ad4d6770d7eb35ed4efbd",
+  "tests/test_budget.py": "d6fceb482d4087579e6b114b1189de5bc85a9176767737277d6f545df31a7065",
+  "tests/test_integration.py": "25bc5dce06f5b70d62627453eea791a57349a2123c103db3954bd67b12a67a4f",
+  "tests/test_lifecycle.py": "b2dd4e5b2165a181949e0054e74c71c714745b5ef2c247ff461619f568d364d4"
+}

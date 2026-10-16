@@ -1,0 +1,11 @@
+bringing up nodes...
+bringing up nodes...
+
+.........                                                                [100%]
+- generated xml file: /Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-2-off/junit.xml -
+================================= threadbudget =================================
+gw0: disabled; 1 native pools observed
+gw1: disabled; 1 native pools observed
+gw2: disabled; 1 native pools observed
+gw3: disabled; 1 native pools observed
+9 passed in 1.62s

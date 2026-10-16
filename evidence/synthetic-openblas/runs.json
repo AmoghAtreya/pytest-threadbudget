@@ -1,0 +1,658 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "cwd": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs",
+    "python": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "versions": {
+      "pytest-threadbudget": "0.1.0",
+      "pytest": "8.4.2",
+      "pytest-xdist": "3.8.0",
+      "threadpoolctl": "3.7.0",
+      "joblib": "1.6.0",
+      "numpy": "1.26.4",
+      "scipy": "1.12.0",
+      "scikit-learn": "1.4.2",
+      "psutil": "7.2.2"
+    },
+    "native_thread_environment": {},
+    "workers": 4,
+    "cpu_cap": null,
+    "override_env": false,
+    "pytest_args": [
+      "outputs/pytest-threadbudget/examples/test_matrix.py",
+      "-q"
+    ],
+    "measurement_notes": [
+      "Wall time includes pytest startup, collection and worker startup.",
+      "Thread peak and CPU time are sampled estimates, not exact accounting.",
+      "No cold-cache claim or statistical significance claim is made."
+    ]
+  },
+  "trials": [
+    {
+      "command": [
+        "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "threadbudget",
+        "-o",
+        "addopts=",
+        "-n",
+        "4",
+        "--threadbudget=off",
+        "--threadbudget-report=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-1-off/threadbudget.json",
+        "--junitxml=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-1-off/junit.xml",
+        "outputs/pytest-threadbudget/examples/test_matrix.py",
+        "-q"
+      ],
+      "exitcode": 0,
+      "timed_out": false,
+      "wall_seconds": 1.9646024170797318,
+      "sampled_peak_process_tree_threads": null,
+      "sampled_cpu_seconds": null,
+      "sampling_interval_seconds": 0.05,
+      "sampling_notes": [
+        "PermissionError"
+      ],
+      "mode": "off",
+      "warmup": true,
+      "environment_unchanged": true,
+      "outcomes": [
+        [
+          "examples.test_matrix",
+          "test_budget_is_visible_when_requested",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[0]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[1]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[2]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[3]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[4]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[5]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[6]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[7]",
+          "passed"
+        ]
+      ],
+      "runtime_enforcement_verified": false
+    },
+    {
+      "command": [
+        "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "threadbudget",
+        "-o",
+        "addopts=",
+        "-n",
+        "4",
+        "--threadbudget=auto",
+        "--threadbudget-report=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-1-auto/threadbudget.json",
+        "--junitxml=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-1-auto/junit.xml",
+        "outputs/pytest-threadbudget/examples/test_matrix.py",
+        "-q"
+      ],
+      "exitcode": 0,
+      "timed_out": false,
+      "wall_seconds": 1.58110470790416,
+      "sampled_peak_process_tree_threads": null,
+      "sampled_cpu_seconds": null,
+      "sampling_interval_seconds": 0.05,
+      "sampling_notes": [
+        "PermissionError"
+      ],
+      "mode": "auto",
+      "warmup": true,
+      "environment_unchanged": true,
+      "outcomes": [
+        [
+          "examples.test_matrix",
+          "test_budget_is_visible_when_requested",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[0]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[1]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[2]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[3]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[4]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[5]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[6]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[7]",
+          "passed"
+        ]
+      ],
+      "runtime_enforcement_verified": true
+    },
+    {
+      "command": [
+        "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "threadbudget",
+        "-o",
+        "addopts=",
+        "-n",
+        "4",
+        "--threadbudget=auto",
+        "--threadbudget-report=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-2-auto/threadbudget.json",
+        "--junitxml=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-2-auto/junit.xml",
+        "outputs/pytest-threadbudget/examples/test_matrix.py",
+        "-q"
+      ],
+      "exitcode": 0,
+      "timed_out": false,
+      "wall_seconds": 1.3184774580877274,
+      "sampled_peak_process_tree_threads": null,
+      "sampled_cpu_seconds": null,
+      "sampling_interval_seconds": 0.05,
+      "sampling_notes": [
+        "PermissionError"
+      ],
+      "mode": "auto",
+      "warmup": false,
+      "environment_unchanged": true,
+      "outcomes": [
+        [
+          "examples.test_matrix",
+          "test_budget_is_visible_when_requested",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[0]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[1]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[2]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[3]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[4]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[5]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[6]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[7]",
+          "passed"
+        ]
+      ],
+      "runtime_enforcement_verified": true
+    },
+    {
+      "command": [
+        "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "threadbudget",
+        "-o",
+        "addopts=",
+        "-n",
+        "4",
+        "--threadbudget=off",
+        "--threadbudget-report=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-2-off/threadbudget.json",
+        "--junitxml=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-2-off/junit.xml",
+        "outputs/pytest-threadbudget/examples/test_matrix.py",
+        "-q"
+      ],
+      "exitcode": 0,
+      "timed_out": false,
+      "wall_seconds": 1.875028375070542,
+      "sampled_peak_process_tree_threads": null,
+      "sampled_cpu_seconds": null,
+      "sampling_interval_seconds": 0.05,
+      "sampling_notes": [
+        "PermissionError"
+      ],
+      "mode": "off",
+      "warmup": false,
+      "environment_unchanged": true,
+      "outcomes": [
+        [
+          "examples.test_matrix",
+          "test_budget_is_visible_when_requested",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[0]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[1]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[2]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[3]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[4]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[5]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[6]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[7]",
+          "passed"
+        ]
+      ],
+      "runtime_enforcement_verified": false
+    },
+    {
+      "command": [
+        "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "threadbudget",
+        "-o",
+        "addopts=",
+        "-n",
+        "4",
+        "--threadbudget=off",
+        "--threadbudget-report=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-3-off/threadbudget.json",
+        "--junitxml=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-3-off/junit.xml",
+        "outputs/pytest-threadbudget/examples/test_matrix.py",
+        "-q"
+      ],
+      "exitcode": 0,
+      "timed_out": false,
+      "wall_seconds": 1.872778832912445,
+      "sampled_peak_process_tree_threads": null,
+      "sampled_cpu_seconds": null,
+      "sampling_interval_seconds": 0.05,
+      "sampling_notes": [
+        "PermissionError"
+      ],
+      "mode": "off",
+      "warmup": false,
+      "environment_unchanged": true,
+      "outcomes": [
+        [
+          "examples.test_matrix",
+          "test_budget_is_visible_when_requested",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[0]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[1]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[2]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[3]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[4]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[5]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[6]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[7]",
+          "passed"
+        ]
+      ],
+      "runtime_enforcement_verified": false
+    },
+    {
+      "command": [
+        "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "threadbudget",
+        "-o",
+        "addopts=",
+        "-n",
+        "4",
+        "--threadbudget=auto",
+        "--threadbudget-report=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-3-auto/threadbudget.json",
+        "--junitxml=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-3-auto/junit.xml",
+        "outputs/pytest-threadbudget/examples/test_matrix.py",
+        "-q"
+      ],
+      "exitcode": 0,
+      "timed_out": false,
+      "wall_seconds": 1.6888952089939266,
+      "sampled_peak_process_tree_threads": null,
+      "sampled_cpu_seconds": null,
+      "sampling_interval_seconds": 0.05,
+      "sampling_notes": [
+        "PermissionError"
+      ],
+      "mode": "auto",
+      "warmup": false,
+      "environment_unchanged": true,
+      "outcomes": [
+        [
+          "examples.test_matrix",
+          "test_budget_is_visible_when_requested",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[0]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[1]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[2]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[3]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[4]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[5]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[6]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[7]",
+          "passed"
+        ]
+      ],
+      "runtime_enforcement_verified": true
+    },
+    {
+      "command": [
+        "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "threadbudget",
+        "-o",
+        "addopts=",
+        "-n",
+        "4",
+        "--threadbudget=auto",
+        "--threadbudget-report=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-4-auto/threadbudget.json",
+        "--junitxml=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-4-auto/junit.xml",
+        "outputs/pytest-threadbudget/examples/test_matrix.py",
+        "-q"
+      ],
+      "exitcode": 0,
+      "timed_out": false,
+      "wall_seconds": 1.7626084999646991,
+      "sampled_peak_process_tree_threads": null,
+      "sampled_cpu_seconds": null,
+      "sampling_interval_seconds": 0.05,
+      "sampling_notes": [
+        "PermissionError"
+      ],
+      "mode": "auto",
+      "warmup": false,
+      "environment_unchanged": true,
+      "outcomes": [
+        [
+          "examples.test_matrix",
+          "test_budget_is_visible_when_requested",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[0]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[1]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[2]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[3]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[4]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[5]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[6]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[7]",
+          "passed"
+        ]
+      ],
+      "runtime_enforcement_verified": true
+    },
+    {
+      "command": [
+        "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-openblas-env/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "threadbudget",
+        "-o",
+        "addopts=",
+        "-n",
+        "4",
+        "--threadbudget=off",
+        "--threadbudget-report=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-4-off/threadbudget.json",
+        "--junitxml=/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-synthetic-fixed/round-4-off/junit.xml",
+        "outputs/pytest-threadbudget/examples/test_matrix.py",
+        "-q"
+      ],
+      "exitcode": 0,
+      "timed_out": false,
+      "wall_seconds": 1.963358375011012,
+      "sampled_peak_process_tree_threads": null,
+      "sampled_cpu_seconds": null,
+      "sampling_interval_seconds": 0.05,
+      "sampling_notes": [
+        "PermissionError"
+      ],
+      "mode": "off",
+      "warmup": false,
+      "environment_unchanged": true,
+      "outcomes": [
+        [
+          "examples.test_matrix",
+          "test_budget_is_visible_when_requested",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[0]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[1]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[2]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[3]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[4]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[5]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[6]",
+          "passed"
+        ],
+        [
+          "examples.test_matrix",
+          "test_matrix_product[7]",
+          "passed"
+        ]
+      ],
+      "runtime_enforcement_verified": false
+    }
+  ]
+}

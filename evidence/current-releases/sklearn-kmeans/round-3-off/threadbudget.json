@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.17",
+  "requested_mode": "off",
+  "exitstatus": 0,
+  "workers": [
+    {
+      "worker": "gw0",
+      "pid": 24672,
+      "plan": {
+        "mode": "off",
+        "detected_cpus": 18,
+        "effective_cpus": 18,
+        "workers": 2,
+        "threads_per_worker": null,
+        "active": false,
+        "reason": "disabled",
+        "explicit_environment": {},
+        "allocation_exceeds_budget": false
+      },
+      "active_in_this_process": false,
+      "outcomes": {
+        "passed": 4,
+        "failed": 0,
+        "skipped": 0,
+        "setup_errors": 0,
+        "teardown_errors": 0
+      },
+      "pools": [
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "num_threads": 9,
+          "prefix": "libomp",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-env/lib/python3.11/site-packages/sklearn/.dylibs/libomp.dylib",
+          "version": null,
+          "observed_at": "session_finish"
+        }
+      ],
+      "notes": [],
+      "elapsed_seconds": 0.8971434170380235,
+      "exitstatus": 0
+    },
+    {
+      "worker": "gw1",
+      "pid": 24673,
+      "plan": {
+        "mode": "off",
+        "detected_cpus": 18,
+        "effective_cpus": 18,
+        "workers": 2,
+        "threads_per_worker": null,
+        "active": false,
+        "reason": "disabled",
+        "explicit_environment": {},
+        "allocation_exceeds_budget": false
+      },
+      "active_in_this_process": false,
+      "outcomes": {
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "setup_errors": 0,
+        "teardown_errors": 0
+      },
+      "pools": [
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "num_threads": 9,
+          "prefix": "libomp",
+          "filepath": "/Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-env/lib/python3.11/site-packages/sklearn/.dylibs/libomp.dylib",
+          "version": null,
+          "observed_at": "session_finish"
+        }
+      ],
+      "notes": [],
+      "elapsed_seconds": 0.8715127920731902,
+      "exitstatus": 0
+    }
+  ],
+  "worker_errors": [],
+  "scope": "local process BLAS/OpenMP pools; pool observations are not OS thread peaks"
+}

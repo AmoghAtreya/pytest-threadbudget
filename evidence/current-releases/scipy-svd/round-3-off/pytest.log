@@ -1,0 +1,16 @@
+bringing up nodes...
+bringing up nodes...
+
+..........s....................................................          [100%]
+=============================== warnings summary ===============================
+work/threadbudget-env/lib/python3.11/site-packages/scipy/conftest.py:175
+work/threadbudget-env/lib/python3.11/site-packages/scipy/conftest.py:175
+  /Users/amoghatreya/Documents/Codex/2026-10-15/i-m-a-college-freshman-cs/work/threadbudget-env/lib/python3.11/site-packages/scipy/conftest.py:175: PytestUnknownMarkWarning: Unknown pytest.mark.array_api_backends - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    pytest.param(np, id='numpy', marks=pytest.mark.array_api_backends)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================= threadbudget =================================
+gw0: disabled; 0 native pools observed
+gw1: disabled; 0 native pools observed
+No supported native pools observed; environment hints alone do not verify runtime enforcement.
+62 passed, 1 skipped, 2 warnings in 0.85s

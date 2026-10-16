@@ -1,0 +1,8 @@
+# Optional reproducibility profile for macOS arm64 / Python 3.11.
+# Older releases are deliberate: their wheels use OpenBLAS, while recent
+# NumPy/SciPy macOS 14 wheels use Apple Accelerate. Not the default install.
+numpy==1.26.4
+scipy==1.12.0
+scikit-learn==1.4.2
+hypothesis==6.170.0
+pandas==3.0.6

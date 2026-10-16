@@ -1,0 +1,9 @@
+bringing up nodes...
+bringing up nodes...
+
+...................                                                      [100%]
+================================= threadbudget =================================
+gw0: disabled; 0 native pools observed
+gw1: disabled; 0 native pools observed
+No supported native pools observed; environment hints alone do not verify runtime enforcement.
+19 passed in 0.70s
