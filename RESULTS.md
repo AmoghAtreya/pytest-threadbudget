@@ -169,3 +169,21 @@ NumPy's median was 4.0% slower, SciPy's 5.0% faster, and scikit-learn's 0.5% fas
 These short differences are not evidence of a general speedup. Raw trials are
 in `evidence/release-011-openblas`. The local OpenBLAS plugin suite passed
 **54 tests with 2 platform/opt-in skips**.
+
+## Public compatibility CI
+
+[CI run 38839447059](https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059)
+passed all **16 jobs** for commit `1ae85940b8a9bea72dc337094a2bc532c186ce99`:
+
+- Built-wheel tests on Linux, macOS, and Windows, each with Python 3.11–3.14
+  (12 combinations).
+- Linux minimum profile: pytest 8.0.2, xdist 3.6.1, threadpoolctl 3.5.0,
+  joblib 1.4.2, NumPy 1.26.4 and psutil 5.9.8.
+- Linux Intel MKL runtime control, including an actual mkl-service assertion.
+- Distribution build/strict metadata validation and Ruff checks.
+
+The first run exposed an isolated-test collection problem in pytest 8.0.2 when
+using `/dev/null` as the config file. Explicit `--confcutdir` boundaries fixed the
+test harness; the corrected minimum-dependency CI job passed. Public job links
+are retained in `evidence/ci-011.json`. Platform-specific skips remain explicit;
+Apple Accelerate runtime control is still unsupported.

@@ -1,0 +1,104 @@
+{
+  "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059",
+  "headSha": "1ae85940b8a9bea72dc337094a2bc532c186ce99",
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "lint",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116775911317"
+    },
+    {
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116775911631"
+    },
+    {
+      "name": "mkl",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776013988"
+    },
+    {
+      "name": "test (windows-latest, 3.12)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014123"
+    },
+    {
+      "name": "test (ubuntu-latest, 3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014127"
+    },
+    {
+      "name": "test (windows-latest, 3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014139"
+    },
+    {
+      "name": "test (ubuntu-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014146"
+    },
+    {
+      "name": "test (windows-latest, 3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014154"
+    },
+    {
+      "name": "test (macos-latest, 3.11)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014155"
+    },
+    {
+      "name": "test (macos-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014169"
+    },
+    {
+      "name": "minimum",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014179"
+    },
+    {
+      "name": "test (ubuntu-latest, 3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014222"
+    },
+    {
+      "name": "test (ubuntu-latest, 3.12)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014226"
+    },
+    {
+      "name": "test (macos-latest, 3.12)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014280"
+    },
+    {
+      "name": "test (windows-latest, 3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014285"
+    },
+    {
+      "name": "test (macos-latest, 3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/AmoghAtreya/pytest-threadbudget/actions/runs/38839447059/job/116776014355"
+    }
+  ]
+}

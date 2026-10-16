@@ -2,7 +2,7 @@
 
 ## 0.1.1
 
-First public release candidate. Includes opt-in local pytest/xdist budgeting,
+First public alpha release. Includes opt-in local pytest/xdist budgeting,
 conservative environment overrides, runtime pool discovery and restoration,
 aggregated JSON diagnostics, and an alternating-order benchmark harness.
 
